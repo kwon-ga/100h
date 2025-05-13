@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "OTEnjoystoriesBA";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.tvn-font {
+  font-family: "OTEnjoystoriesBA";
+}
+
+.Gmarket-font {
+  font-family: "GmarketSans";
+}
+
+.focus-text {
+  font-weight: bold;
+  font-size: 1.7em;
+}
+
+.font-yellow {
+  color: rgba(245, 223, 77, 1);
+}
+
+.font-white {
+  color: rgba(255, 255, 255, 1);
+}
+
+.font-gray {
+  color: rgba(186, 188, 190, 1);
+}
+
+.font-grape {
+  color: rgba(91, 35, 134, 1);
+}
+
+.font-size-48 {
+  font-size: 48px;
+}
+.font-size-36 {
+  font-size: 36px;
+}
+.font-size-24 {
+  font-size: 24px;
+}
+.line-height-150 {
+  line-height: 1.5;
+}
