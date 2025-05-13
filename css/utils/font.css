@@ -1,0 +1,37 @@
+.font-xs {
+  font-size: var(--font-size-xs);
+}
+.font-sm {
+  font-size: var(--font-size-sm);
+}
+.font-lg {
+  font-size: var(--font-size-lg);
+}
+.font-xl {
+  font-size: var(--font-size-xl);
+}
+.font-2xl {
+  font-size: var(--font-size-2xl);
+}
+.font-bold {
+  font-weight: bold;
+}
+.font-yellow {
+  color: var(--color-yellow);
+}
+.font-purple {
+  color: var(--color-purple);
+}
+.tvn-font {
+  font-family: "tvNEnjoystories";
+}
+.font-break::after {
+  content: "\A";
+  white-space: pre;
+}
+.text-center {
+  text-align: center;
+}
+.vertical-middle {
+  vertical-align: middle;
+}

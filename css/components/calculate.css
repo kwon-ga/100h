@@ -1,0 +1,29 @@
+.calculate-btn {
+  padding: 15px;
+  width: 567px;
+  height: 64px;
+  background-color: var(--color-yellow);
+  color: var(--color-purple);
+  border-radius: 15px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  position: relative;
+}
+
+.calculate-btn::after {
+  content: "";
+  position: absolute;
+  right: -80px;
+  bottom: -15px;
+  background-image: url("../../images/click-icon.svg");
+  width: 70px;
+  height: 60px;
+}
+
+@media (max-width: 768px) {
+  .calculate-btn {
+    padding: 20px;
+    width: 240px;
+    height: 72px;
+  }
+}

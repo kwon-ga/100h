@@ -1,0 +1,73 @@
+html {
+  font-size: var(--font-size-root);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  gap: 1rem;
+  font-family: "GmarketSans";
+  color: var(--color-white);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  header img {
+    width: 278px;
+    height: 130px;
+  }
+}
+
+footer {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.sr-only {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  transition: background-color 0.4s, transform 0.05s ease, box-shadow 0.05s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+button:hover {
+  background-color: rgba(186, 188, 190, 1);
+}
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 2px solid var(--color-gray);
+  outline: none;
+  transition: all 0.3s;
+}
+input[type="text"]:focus {
+  border-color: var(--color-gray);
+  background-color: var(--color-gray);
+  box-shadow: 0 0 8px var(--color-gray);
+}

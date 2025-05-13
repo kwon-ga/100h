@@ -1,0 +1,17 @@
+.input-contents input {
+  margin: 15px;
+  width: 228px;
+  height: 56px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  color: var(--color-black);
+}
+
+@media (max-width: 768px) {
+  .input-contents input {
+    margin: 10px;
+    width: 156px;
+    height: 38px;
+  }
+}

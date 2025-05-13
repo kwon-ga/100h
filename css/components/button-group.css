@@ -1,0 +1,47 @@
+.btn-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 10%;
+}
+
+.start-training-btn,
+.share-btn,
+.modal-start-training-btn {
+  height: 64px;
+  color: var(--color-purple);
+  border-radius: 15px;
+}
+
+.start-training-btn {
+  width: 365px;
+}
+.share-btn {
+  width: 193px;
+}
+.modal-start-training-btn {
+  width: 508px;
+}
+
+@media (max-width: 768px) {
+  .btn-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 6%;
+  }
+  .start-training-btn,
+  .share-btn {
+    height: 46px;
+  }
+
+  .start-training-btn {
+    width: 203px;
+  }
+  .share-btn {
+    width: 102px;
+  }
+
+  .modal-start-training-btn {
+    width: 240px;
+    height: 72px;
+  }
+}

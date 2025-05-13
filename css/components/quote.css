@@ -1,0 +1,34 @@
+.quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+.quote::after,
+.quote::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  width: 36px;
+  height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.quote::before {
+  background-image: url("../../images/quote-open.svg");
+  left: -15%;
+}
+.quote::after {
+  background-image: url("../../images/quote-close.svg");
+  right: -15%;
+}
+
+@media (max-width: 768px) {
+  .quote::after,
+  .quote::before {
+    width: 20px;
+    height: 18px;
+  }
+}

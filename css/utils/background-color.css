@@ -1,0 +1,12 @@
+.back-color-yellow {
+  background-color: var(--color-yellow);
+}
+.back-color-white {
+  background-color: var(--color-white);
+}
+.back-color-gray {
+  background-color: var(--color-gray);
+}
+.back-color-purple {
+  background-color: var(--color-purple);
+}

@@ -3,135 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>토이프로젝트 메인 페이지</title>
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/font.css" />
-    <style>
-      body {
-        background-color: rgba(91, 35, 134, 1);
-        display: flex;
-        align-items: center;
-        margin-top: 5%;
-      }
-
-      main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .margin-btm-5 {
-        margin-bottom: 5%;
-      }
-      .margin-btm-15 {
-        margin-bottom: 15%;
-      }
-
-      .text-center {
-        text-align: center;
-      }
-
-      .quote {
-        display: flex;
-        align-items: center;
-        gap: 30px;
-      }
-      .quote::after {
-        content: "";
-        display: block;
-        background-image: url("./images/quote-close.svg");
-        width: 36px;
-        height: 32px;
-      }
-      .quote::before {
-        content: "";
-        display: block;
-        background-image: url("./images/quote-open.svg");
-        width: 36px;
-        height: 32px;
-      }
-
-      input {
-        height: 56px;
-        border-radius: 10px;
-        border: none;
-      }
-
-      .margin-15px {
-        margin: 15px;
-      }
-
-      .back-color-yellow {
-        background-color: rgba(252, 238, 33, 1);
-      }
-
-      .width-550 {
-        width: 550px;
-      }
-
-      .margin-top-8-px {
-        margin-top: 8px;
-      }
-    </style>
   </head>
-  <body>
+
+  <body class="back-color-purple">
     <header class="margin-btm-5">
-      <img src="./images/title.svg" alt="일만시간의법칙" />
+      <img src="./images/title.svg" />
+      <script src="./js/click-event.js"></script>
     </header>
+
     <main>
-      <p class="tvn-font font-yellow margin-btm-15 font-size-48">
-        “연습은 어제의 당신보다 당신을 더 낫게 만든다.”
+      <p class="font-yellow tvn-font font-lg">
+        "연습은 어제의 당신보다 당신을 더 낫게 만든다."
       </p>
 
-      <div class="quote margin-btm-15">
-        <p
-          class="Gmarket-font font-white font-size-24 text-center line-height-150"
-        >
-          <span class="focus-text">1만 시간의 법칙</span>은 <br />
-          어떤 분야의 전문가가 되기 위해서는<br />
+      <div class="quote">
+        <span class="font-bold">
+          1만 시간의 법칙<span class="font-sm">은</span>
+        </span>
+        <span class="font-sm">어떤 분야의 전문가가 되기 위해서는</span>
+        <span class="font-sm">
           최소한 1만 시간의 훈련이 필요하다는 법칙이다.
-        </p>
+        </span>
       </div>
 
-      <div class="margin-btm-15">
-        <p class="Gmarket-font font-size-24 font-white text-center">
+      <div class="input-contents text-center">
+        <p>
           나는
-          <input
-            class="margin-15px text-center font-gray"
-            type="text"
-            placeholder="예)프로그래밍"
-          />
-          전문가가 될 것이다.
+          <input type="text" placeholder="예)프로그래밍" />
+          전문가가 될것이다.
         </p>
-        <p class="Gmarket-font font-size-24 font-white text-center">
-          그래서 앞으로 매일 하루에
-          <input
-            class="margin-15px text-center"
-            type="text"
-            placeholder="예)5시간"
-          />
-          시간씩 훈련할 것이다.
+        <p>
+          <span class="mobile-break">그래서 앞으로 매일 하루에 </span>
+          <input type="text" placeholder="예)5시간" />
+          <span>시간씩 훈련할 것이다.</span>
         </p>
       </div>
 
-      <div class="margin-btm-15">
-        <input
-          type="button"
-          class="back-color-yellow width-550 Gmarket-font focus-text font-siez-24 font-grape"
-          value="나는 며칠 동안 훈련을 해야 1만 시간이 될까?"
-        />
-        <img class="margin-top-8-px" src="./images/click-icon.svg" />
+      <button class="calculate-btn font-bold">
+        <span class="mobile-break"> 나는 며칠 동안 훈련을 해야</span>
+        &nbsp;1만 시간이 될까?
+      </button>
+
+      <div>
+        <p class="text-center">
+          당신은
+          <span class="font-xl font-bold vertical-middle">프로그래밍</span>
+          전문가가 되기 위해서
+        </p>
+        <p class="text-center">
+          대략 <span class="font-xl font-bold vertical-middle">5110</span>
+          일 이상 훈련하셔야 합니다! :)
+        </p>
       </div>
 
-      <p class="Gmarket-font font-size-36 font-white text-center">
-        당신은 <span class="focus-text">프로그래밍</span> 전문가가 되기 위해서
-      </p>
-      <p class="Gmarket-font font-size-36 font-white text-center">
-        대략 <span class="focus-text">5110</span>일 이상 훈련하셔야 합니다! :)
-      </p>
-
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <div class="btn-group">
+        <button
+          onclick="openModalEvent()"
+          class="start-training-btn back-color-yellow font-bold"
+        >
+          훈련하러 가기 GO! GO!
+        </button>
+        <button class="share-btn back-color-white">공유하기</button>
+      </div>
     </main>
-    <footer></footer>
+
+    <footer>
+      <img src="./images/logo.svg" />
+      <p class="font-xs text-center">
+        본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 위니브에 있습니다.
+        <br />
+        수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
+      </p>
+    </footer>
+    <div id="overlay" class="overlay hidden" onclick="closeModalEvent()"></div>
+    <iframe id="modal" class="modal hidden" src="./modal.html"></iframe>
   </body>
 </html>
